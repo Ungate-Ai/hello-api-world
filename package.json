@@ -1,0 +1,20 @@
+{
+  "name": "hello-api-world",
+  "version": "1.0.0",
+  "description": "A simple service that reads ConfigMap and exposes endpoints.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "pnpm build && node dist/index.js",
+    "build": "pnpm tsc",
+    "dev": "pnpm ts-node-dev src/index.ts",
+    "tsc": "tsc",
+    "ts-node-dev": "ts-node-dev"
+  },
+  "dependencies": {
+    "fastify": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node-dev": "^2.0.0"
+  }
+}
